@@ -16,6 +16,3 @@ print(method_scan)
 guessed_os = "There is a %s percent chance that the host is running %s." % (nm_scanner['scan'][sys.argv[1]]['osmatch'][0]['accuracy'], 
                                                                             nm_scanner['scan'][sys.argv[1]]['osmatch'][0]['name'])+"\n"
 print(guessed_os)
-
-with open("%s.txt" % sys.argv[1], 'w') as f:
-    f.write(host_is_up+port_open+method_scan+guessed_os)
